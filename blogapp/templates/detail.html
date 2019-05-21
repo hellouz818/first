@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block content %}
+<head>
+        <script
+        src="https://code.jquery.com/jquery-3.4.0.js"
+        integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo="
+        crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+        <h1><p class="text-center">자세한 본문 내용</p></h1>
+        <br>
+        <h1><div class="p-3 mb-2 bg-info text-white"><p class="text-center">제목 : {{blog.title}}</div></p></h1>
+</head>
+<body>
+        <p class="text-right">작성 날짜 : {{blog.pub_date}}</p>
+        <p>자세한 본문 : {{blog.body}}</p>
+</body>
+
+{% endblock %}
